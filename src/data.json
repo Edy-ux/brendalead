@@ -1,0 +1,23 @@
+{
+  "name": "Brenda",
+  "avatar": "https://i.ibb.co/JQTDnnk/brenda-ccs.png",
+  "links": [
+
+    {
+      "title": "WhatsApp",
+      "href": "https://api.whatsapp.com/send?phone=554732634973", 
+      "image": "https://image.similarpng.com/very-thumbnail/2020/04/WhatsApp-logo-modern-paint-splash-social-media-png.png"
+    }
+  ],
+
+  "socials": [
+    {
+      "title": "Github",
+      "href": " https://github.com/Edy-ux"
+    },
+    {
+      "title": "instagram",
+      "href": " https://www.instagram.com//edydev_/"
+    }
+  ]
+}
