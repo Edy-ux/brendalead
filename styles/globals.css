@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  min-height: 100%;
+}
  body {
   height: 100vh;
+  background-position: center center;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
+  background-size: cover;
+/*   background-image: url("https://img.freepik.com/free-vector/gradient-galaxy-background-with-rocket_23-2148154130.jpg?t=st=1730032257~exp=1730035857~hmac=69a097c0778a661fe6093847715954166d663ade3f65ea7e61520956b4452b49&w=826");
+ */
+
+ background-image: linear-gradient(
     25deg,
     #1c1c26,
     #1e202f 11%,

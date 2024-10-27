@@ -63,7 +63,7 @@ export default function HomePage() {
         />
         
       </section>
-      <a className="fixed bottom-2 right-3" href="https://api.whatsapp.com/send?phone=554732634973"  target="_blank" rel="noopener noreferrer">
+      <a className="fixed bottom-2 right-3" href="https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet."  target="_blank" rel="noopener noreferrer">
         <WhastsAppIcon />
       </a>
     </div>
