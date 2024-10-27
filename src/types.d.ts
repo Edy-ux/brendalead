@@ -26,3 +26,11 @@ export interface Data {
     name: string
     benefits?: String[]
 }
+
+export interface CardProp {
+  href: string,
+  alt: string
+  comodato:string
+  name: string
+  benefits?: String[]
+}

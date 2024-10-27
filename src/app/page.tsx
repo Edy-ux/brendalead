@@ -4,8 +4,7 @@ import Image from 'next/image';
 import data from '../data.json';
 import { Data, Plan } from '../types';
 import { TwitterIcon, WhastsAppIcon } from '../assets';
-import PlanCard from '@/components/PlanCard';
-
+import CardsComponent from "../components/PlanCard"
 
 
 export default function HomePage() {
@@ -49,25 +48,7 @@ export default function HomePage() {
 
       <section className="mt-14">
         <h3 className='text-white mb-2  text-2xl font-medium'>Nossos Planos de Internet </h3>
-        <div className='items-center justify-between md:flex  gap-4 '>
-             {
-               links.plans?.map((plan: Plan )=> {
-                 return (
-                     <>
-                       <PlanCard 
-                         alt={plan.alt}
-                         comodato={plan.comodato}
-                         benefits={plan.benefits}
-                         name={plan.name}
-                         href={plan.href}
-                       />
-                     </>
-                 )
-               })
-             }
-        </div>
-
-
+         <CardsComponent />
       </section>
       <a className="fixed bottom-2 right-3" href="https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet." target="_blank" rel="noopener noreferrer">
         <WhastsAppIcon />
