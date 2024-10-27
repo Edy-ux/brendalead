@@ -17,7 +17,7 @@ const PlanCardView: FC<CardProp> = ({ href, alt, comodato, name, benefits}) => {
                          target="_blank" rel="noopener noreferrer" >
                 <Image
                     className="
-                     marker:cursor-pointer
+                     cursor-pointer
                      object-cover
                      transition
                      duration
@@ -28,7 +28,6 @@ const PlanCardView: FC<CardProp> = ({ href, alt, comodato, name, benefits}) => {
                      
                      delay-300
                      
-                    
                      "
                     alt={alt}
                     src={href}
