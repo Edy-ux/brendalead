@@ -14,8 +14,12 @@ type CardProp = {
 const PlanCard: FC<CardProp> = ({ href, alt, comodato, name, benefits}) => {
 
     let text = `**Olá Brenda**, gostaria de mais informações sobre o plano  de internet  ${name}. \n ${benefits?.map(b => `\n ${b}`)} \n º ${comodato}`
-
-    text = window.encodeURIComponent(text);
+    
+    if (typeof window !== "undefined") {
+        text = window.encodeURIComponent(text);
+      }
+      
+    
 
     return (
 
