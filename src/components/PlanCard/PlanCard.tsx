@@ -12,7 +12,7 @@ const PlanCard = () => {
         <div className='items-center justify-between md:flex  gap-4 '>
             {
                 links.plans?.map(plan => {
-                    return <PlanCardView {...plan} />
+                    return <PlanCardView key={plan.id} {...plan} />
                 })
             }
         </div>
