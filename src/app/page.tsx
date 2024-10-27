@@ -1,8 +1,8 @@
-'use client';
+
 import LinkCardItem from '../components/LinkItem';
 import Image from 'next/image';
 import data from '../data.json';
-import { Data } from '../types';
+import { Data, Plan } from '../types';
 import { TwitterIcon, WhastsAppIcon } from '../assets';
 import PlanCard from '@/components/PlanCard';
 
@@ -10,14 +10,14 @@ import PlanCard from '@/components/PlanCard';
 
 export default function HomePage() {
 
-  const links: Data = data;
+  const links : Data = data;
 
   return (
     <div className="flex flex-col w-full items-center justify-center mt-8 px-8">
       <header>
-        <h3 className="text-white font-light  mb-4  text-4xl text-center">
+        <h1 className="text-white font-light  mb-4  text-5xl text-center ">
           Navegue com a <span className='font-semibold'>INTERNET</span> mais <span className='font-semibold'>MODERNA</span> de <span className='font-semibold'>Santa Catarina!</span>
-        </h3>
+        </h1>
       </header>
       <Image
         className="rounded-full"
@@ -35,7 +35,6 @@ export default function HomePage() {
       <div className="flex items-center justify-between mt-4 mb-8 gap-2">
 
         <h1 className="text-2xl font-bold text-white">Brenda Scarlat </h1>
-
         <Image
           width={17}
           height={17}
@@ -45,25 +44,32 @@ export default function HomePage() {
 
         />
       </div>
+
       <LinkCardItem links={links.links} />
 
-      <section className="items-center justify-between mt-11 mb-8 gap-6 md:flex">
-        <PlanCard
+      <section className="mt-14">
+        <h3 className='text-white mb-2  text-2xl font-medium'>Nossos Planos de Internet </h3>
+        <div className='items-center justify-between md:flex  gap-4 '>
+             {
+               links.plans?.map((plan: Plan )=> {
+                 return (
+                     <>
+                       <PlanCard 
+                         alt={plan.alt}
+                         comodato={plan.comodato}
+                         benefits={plan.benefits}
+                         name={plan.name}
+                         href={plan.href}
+                       />
+                     </>
+                 )
+               })
+             }
+        </div>
 
-          alt='plano de 250MB'
-          href='https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$9k3aeyaqg7e'
-        />
-        <PlanCard
-          alt='plano de 250MB'
-          href='https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$dwhtka6za3m'
-        />
-        <PlanCard
-          alt='plano de 250MB'
-          href='https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$k236k7el0g'
-        />
-        
+
       </section>
-      <a className="fixed bottom-2 right-3" href="https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet."  target="_blank" rel="noopener noreferrer">
+      <a className="fixed bottom-2 right-3" href="https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet." target="_blank" rel="noopener noreferrer">
         <WhastsAppIcon />
       </a>
     </div>

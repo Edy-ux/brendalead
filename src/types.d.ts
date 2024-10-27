@@ -3,6 +3,7 @@ export interface Data {
     avatar?: string
     links?: Link[]
     socials?: Social[]
+    plans?: Plan[]
   }
   
   export interface Link {
@@ -16,3 +17,12 @@ export interface Data {
     href: string
   }
   
+  
+  export interface Plan {
+    id?: number
+    href: string,
+    alt: string
+    comodato:string
+    name: string
+    benefits?: String[]
+}

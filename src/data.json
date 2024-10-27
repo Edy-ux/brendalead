@@ -2,14 +2,12 @@
   "name": "Brenda",
   "avatar": "https://i.ibb.co/JQTDnnk/brenda-ccs.png",
   "links": [
-
     {
       "title": "WhatsApp",
-      "href": "https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet.", 
+      "href": "https://api.whatsapp.com/send?phone=554732634973&text=Ol%C3%A1%20Brenda,%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20planos%20de%20internet.",
       "image": "https://image.similarpng.com/very-thumbnail/2020/04/WhatsApp-logo-modern-paint-splash-social-media-png.png"
     }
   ],
-
   "socials": [
     {
       "title": "Github",
@@ -18,6 +16,43 @@
     {
       "title": "instagram",
       "href": " https://www.instagram.com//edydev_/"
+    }
+  ],
+  "plans": [
+    {
+      "id":1, 
+      "name": "250 MEGA",
+      "alt":  "plano de 250 MEGA",
+      "href": "https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$9k3aeyaqg7e",
+      "comodato": "º Roteador Mercusys MR30",
+      "benefits": [
+        "º Clube de Vantagens",
+        "º Aplicativos - Conteúdos Online"
+      ]
+    
+    },
+    {
+      "id":3, 
+      "name": "650 MEGA",
+      "alt": "plano de 650 MEGA",
+      "href": "https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$dwhtka6za3m",
+
+      "comodato": "Roteador TP-LINK EX220 - Wifi-6",
+      "benefits": [
+        "º Clube de Vantagens",
+        "º Aplicativos - Conteúdos Online"
+      ]
+    },
+    {
+      "id":2, 
+      "name": "450 MEGA",
+      "alt": "plano de 450 MEGA",
+      "href": "https://d335luupugsy2.cloudfront.net/cms/files/613854/1706268942/$k236k7el0g",
+      "comodato": "Roteador TP-LINK EX220 - Wifi-6",
+      "benefits": [
+        "º Clube de Vantagens",
+        "º Aplicativos - Conteúdos Online"
+      ]
     }
   ]
 }

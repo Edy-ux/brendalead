@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body className='h-full'>
+      <body className='h-full bg-zinc-900'>
         {children}
      </body>
     </html>
